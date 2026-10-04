@@ -33,20 +33,6 @@ This repository demonstrates the entire analytics engineering lifecycle: raw dat
 └── README.md
 ```
 
----
-## AdventureWorks Enterprise Business Intelligence System
-
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![DAX](https://img.shields.io/badge/DAX-Advanced_Expressions-blue?style=for-the-badge)
-![Data Modeling](https://img.shields.io/badge/Data_Modeling-Star_Schema-green?style=for-the-badge)
-![UX Design](https://img.shields.io/badge/UX-Bookmarks_&_Navigation-purple?style=for-the-badge)
-
-An end-to-end Enterprise Business Intelligence solution developed using **Microsoft Power BI Desktop**, based on global manufacturing and sales operations data from **AdventureWorks**.
-
-This repository demonstrates the entire analytics engineering lifecycle: raw data ingestion and transformation via Power Query, Star Schema relational modeling, complex DAX measures[ : 16], calculation groups, what-if sensitivity simulations, custom visual interactions, and AI-driven root-cause investigation.
-
----
-
 ## Project Overview & Business Scenario
 
 AdventureWorks is a global manufacturing company producing bicycles, accessories, and components. The executive and operations leadership required a unified, robust analytical platform to replace fragmented reporting spreadsheets, specifically aiming to:
