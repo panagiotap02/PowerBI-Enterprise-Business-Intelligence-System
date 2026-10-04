@@ -72,7 +72,6 @@ AdventureWorks is a global manufacturing company producing bicycles, accessories
 
 The semantic data layer was built according to relational data warehouse design standards[ : 16]. It segregates heavy transactional tables (facts) from business context lookup tables (dimensions).
 
-
 <p align="center">
   <img src="Data%20model.png" width="95%" alt="Data Model Star Schema" />
 </p>
@@ -94,12 +93,19 @@ The semantic data layer was built according to relational data warehouse design 
 ## Report Pages & Analytical Walkthrough
 
 ### 1. Executive Performance Dashboard
+
+<p align="center">
+  <img src="Excecutive%20Dashboard%201.png" width="95%" alt="Executive Dashboard" />
+</p>
+
 The primary landing view tailored for executive decision-makers to track high-level operational health.
 * **Core Scorecards:** Total Revenue ($9.32M), Total Cost ($5.36M), Total Orders (10.70K), and Return Rate (2.13%).
 * **Revenue Trend & Forecasting:** Longitudinal time series tracing monthly progress with dynamic statistical projections.
 * **Visuals & Tables:** Category order share combined with a Top 10 Products performance matrix featuring conditional bar indicators.
 
-![Executive Dashboard](Executive%20Dashboard.jpg)
+<p align="center">
+  <img src="Excecutive%20Dashboard%202.png" width="95%" alt="Executive Dashboard" />
+</p>
 
 ---
 
@@ -108,17 +114,20 @@ Maintains maximum canvas space by hiding global filtering interfaces until invok
 * **Mechanics:** Coordinated using the **Bookmarks Pane** and **Selection Pane** (`Show Slicer Panel`, `Hide Slicer Panel`, `Clear Exec Filters`).
 * **Interactive Slicers:** Date range selectors (2020–2022) and multi-continent selectors (Europe, North America, Pacific).
 
-![Collapsible Slicer Menu](Executive_Dashboard_slicer_menu.jpg)
-![Bookmarks](Bookmarks.png)
-
+<p align="center">
+  <img src="Executive_Dashboard_slicer_menu.png" width="65%" alt="Collapsible Slicer Menu" />
+  <img src="Bookmarks.png" width="30%" alt="Power BI Bookmarks Setup" />
+</p>
 ---
 
 ### 3. Dynamic Visual Report-Page Tooltip
 Enhances visual storytelling by revealing nested analytics on mouse hover.
 * **On-Demand Context:** Hovering over any item in the category distribution chart opens a micro-dashboard displaying weekly sales volume trends, total profit, and return metrics for that specific category.
 
-<!-- ΣΥΡΕ ΤΗΝ ΕΙΚΟΝΑ ΤΟΥ HOVER TOOLTIP ΕΔΩ (ή assets/04_category_tooltip.png) -->
-![Report-Page Tooltip](Executve_Dashboard_Custom_Tooltips.jpg)
+<p align="center">
+  <img src="Excecutive%20Dashboard%202.png" width="65%" alt="Executive Dashboard Tooltip Hover State" />
+  <img src="Custom%20Tooltip.png" width="30%" alt="Custom Tooltip Canvas" />
+</p>
 
 ---
 
@@ -127,17 +136,30 @@ Provides spatial context for international commercial activities.
 * **Choropleth/Bubble Mapping:** Regional bubble sizing reflects order density across the United States, Canada, the United Kingdom, France, Germany, and Australia.
 * **Continent Selectors:** Quick-access buttons allow dynamic zooming between major geographic markets.
 
-![Global Map View](Map.jpg)
+<p align="center">
+  <img src="Map.png" width="95%" alt="Global Map View" />
+</p>
 
 ---
 
 ### 5. Product Detail & Sensitivity "What-If" Analysis
 Detailed SKU-level performance tracking equipped with live simulation tools.
+
+<p align="center">
+  <img src="Product%20Detail%201.png" width="95%" alt="Product Detail - Orders View" />
+</p>
+
+
 * **Target Gauges:** Visualizing actual operational performance against planned monthly quotas (Orders, Revenue, and Profit vs Target).
 * **What-If Pricing Slider:** An interactive parameter (`Price Adjustment`) that dynamically recalculates projected margins (`Adjusted Profit`) across the entire catalog.
 * **Metric Switcher:** Interactive control enabling seamless switching between volume, revenue, profit, and return trends on a single visual.
 
-![Product Detail](Product_Detail.jpg)
+<p align="center">
+  <img src="Product%20Detail%202.png" width="95%" alt="Product Detail - Revenue View" />
+</p>
+<p align="center">
+  <img src="Product%20Detail%203.png" width="95%" alt="Product Detail - Profit and Returns View" />
+</p>
 
 ---
 
@@ -146,7 +168,9 @@ Granular analysis evaluating client segment characteristics and value distributi
 * **Demographic Distributions:** Donut charts highlighting customer composition across occupational groups (Professional, Skilled Manual, Management, Clerical) and annual income tiers.
 * **Customer Ledger:** Granular transaction tracking evaluating individual revenue contributions, total historical order counts, and automated narrative highlights.
 
-![Customer Detail View](Custom_Detail.jpg)
+<p align="center">
+  <img src="Customer%20Detail%201.png" width="95%" alt="Customer Detail View" />
+</p>
 
 ---
 
@@ -155,7 +179,9 @@ Harnessing Power BI native AI capabilities to decompose complex aggregated metri
 * **Multi-Tier Diagnostics:** Drills down automatically into Return Rates across Category $\rightarrow$ Subcategory $\rightarrow$ Product Model.
 * **Root-Cause Discovery:** Quickly pinpoints outlier lines (such as specific Touring Bike models) that drive elevated return volumes.
 
-![Decomposition Tree Visual](Decomposition%20Tree.jpg)
+<p align="center">
+  <img src="Decomposition%20Tree.png" width="95%" alt="Decomposition Tree Visual" />
+</p>
 
 ---
 
@@ -164,8 +190,9 @@ Implementing advanced semantic structures to eliminate measure duplication and s
 * **Unified Matrix Reporting:** Allows users to pick any primary business metric (`Total Cost`, `Total Revenue`, `Total Profit`, `Total Orders`, `Total Quantity Sold`).
 * **Automated Time Dimensions:** Simultaneously calculates and presents `Current Measure`, `MoM %` (Month-over-Month change), `Previous Month`, and `QTD` (Quarter-to-Date) totals.
 
-![Calculation Groups Matrix](Calculation%20Groups.jpg)
-
+<p align="center">
+  <img src="Calculation%20Group.png" width="95%" alt="Calculation Groups Matrix" />
+</p>
 ---
 
 ## Sample DAX Formulations
