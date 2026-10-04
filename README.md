@@ -115,8 +115,7 @@ Maintains maximum canvas space by hiding global filtering interfaces until invok
 * **Interactive Slicers:** Date range selectors (2020–2022) and multi-continent selectors (Europe, North America, Pacific).
 
 <p align="center">
-  <img src="Executive_Dashboard_slicer_menu.png" width="65%" alt="Collapsible Slicer Menu" />
-  <img src="Bookmarks.png" width="30%" alt="Power BI Bookmarks Setup" />
+  <img src="Bookmarks.png" width="22%" alt="Power BI Bookmarks Setup" />
 </p>
 ---
 
